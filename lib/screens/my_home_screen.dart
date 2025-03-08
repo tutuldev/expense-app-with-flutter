@@ -10,8 +10,9 @@ class MyHomeScreen extends StatelessWidget {
         backgroundColor: Color(0xFFFFFFFF), //eta defaul
         elevation: 0, //show 0 etaw default
          leading: Container(
-           margin: EdgeInsets.all(8),
-          decoration: BoxDecoration(
+           height: 90,
+           margin: const EdgeInsets.all(8),
+           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             image: DecorationImage(image: NetworkImage("https://picsum.photos/200"))
           ),
