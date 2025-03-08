@@ -1,3 +1,4 @@
+import 'package:expense_app/screens/widgets/account_mannage.dart';
 import 'package:expense_app/screens/widgets/credit_card.dart';
 import 'package:expense_app/screens/widgets/current_account.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,12 @@ class MyHomeScreen extends StatelessWidget {
 
           // cards
           CreditCard(),
+          SizedBox(height: 20),
+
+          //account manage
+          Align (
+            alignment: Alignment.center,
+              child: AccountMannage()),
 
           // transections
 

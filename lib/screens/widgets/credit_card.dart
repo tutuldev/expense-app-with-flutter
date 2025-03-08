@@ -19,7 +19,8 @@ class CreditCard extends StatelessWidget {
         children: [
            const Padding(
             padding: EdgeInsets.only(left: 16.0),
-            child: Text("1234 1234 1223 1224",style: TextStyle(fontSize: 22,color: Colors.white),),
+            child: Text("1234 1234 1223 1224",
+              style: TextStyle(fontSize: 22,color: Colors.white),),
           ),
           const SizedBox(height: 22),
           Padding(
@@ -27,7 +28,8 @@ class CreditCard extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                Text("Nirob Hasan",style: TextStyle(fontSize: 16,color: Colors.white),),
+                Text("Nirob Hasan",
+                  style: TextStyle(fontSize: 16,color: Colors.white),),
                 Text("VISA",style: TextStyle(fontSize: 20,color: Colors.white),)
               ],
             ),
