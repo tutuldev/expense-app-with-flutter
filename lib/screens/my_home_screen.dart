@@ -1,3 +1,4 @@
+import 'package:expense_app/screens/widgets/current_account.dart';
 import 'package:flutter/material.dart';
 
 class MyHomeScreen extends StatelessWidget {
@@ -22,6 +23,18 @@ class MyHomeScreen extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: IconButton(onPressed: (){}, icon: Icon(Icons.settings,color: Colors.blue,)),
           )
+        ],
+      ),
+      body: Column(
+        children: [
+          //current account blance section
+          CurrentAcount()
+
+          // cards
+
+
+          // transections
+
         ],
       ),
     );
