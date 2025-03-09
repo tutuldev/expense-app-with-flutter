@@ -1,10 +1,13 @@
+import 'package:expense_app/screens/model/transections_model.dart';
 import 'package:expense_app/screens/widgets/account_mannage.dart';
 import 'package:expense_app/screens/widgets/credit_card.dart';
 import 'package:expense_app/screens/widgets/current_account.dart';
+import 'package:expense_app/screens/widgets/transactions_list.dart';
 import 'package:flutter/material.dart';
 
 class MyHomeScreen extends StatelessWidget {
   const MyHomeScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +32,7 @@ class MyHomeScreen extends StatelessWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children:   [
           //current account blance section
           CurrentAcount(),
 
@@ -48,7 +51,7 @@ class MyHomeScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal:8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const  [
                 Text("Transections",
                 style: TextStyle(
                   fontSize: 32,
@@ -64,7 +67,8 @@ class MyHomeScreen extends StatelessWidget {
               ],
 
             ),
-          )
+          ),
+          Expanded(child: TransactionsList()),
 
         ],
       ),
