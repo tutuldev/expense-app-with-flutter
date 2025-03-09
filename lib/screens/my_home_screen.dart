@@ -41,8 +41,30 @@ class MyHomeScreen extends StatelessWidget {
           Align (
             alignment: Alignment.center,
               child: AccountMannage()),
+          SizedBox(height: 20),
 
           // transections
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal:8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Transections",
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w500,
+                ),
+                ),
+                Spacer(),
+                Text("See All",style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.blue,
+                ),),
+                Icon(Icons.arrow_forward_ios,color: Colors.blue,),
+              ],
+
+            ),
+          )
 
         ],
       ),
